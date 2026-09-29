@@ -1,0 +1,38 @@
+{
+  "identifier" : "4C1D5E0A",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : true,
+      "internalID" : "6740000001",
+      "localizations" : [
+        {
+          "description" : "Color themes, custom odds and unlimited history. One-time purchase.",
+          "displayName" : "Yes or No Pro",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.tomnorush.yesno.pro",
+      "referenceName" : "Yes or No Pro",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
