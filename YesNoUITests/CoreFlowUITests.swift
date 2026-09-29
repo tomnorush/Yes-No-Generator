@@ -23,6 +23,15 @@ final class CoreFlowUITests: XCTestCase {
             .firstMatch
     }
 
+    /// Distinct history rows on screen. Counted by identifier, so a row exposed both as a
+    /// cell and as its content is still counted once.
+    private func historyRowCount() -> Int {
+        let rows = app.descendants(matching: .any)
+            .matching(NSPredicate(format: "identifier BEGINSWITH %@", "history.row."))
+        guard rows.firstMatch.waitForExistence(timeout: 3) else { return 0 }
+        return Set(rows.allElementsBoundByIndex.map(\.identifier)).count
+    }
+
     private func scrollSettingsToBottom() {
         for _ in 0..<3 {
             app.swipeUp()
@@ -39,10 +48,8 @@ final class CoreFlowUITests: XCTestCase {
         answerButton.tap()
 
         app.buttons["history"].tap()
-        let list = app.collectionViews["history.list"]
-        XCTAssertTrue(list.waitForExistence(timeout: 2))
-        // The launch answer plus the tapped one.
-        XCTAssertEqual(list.cells.count, 2)
+        // The launch answer plus the tapped one, each saved exactly once.
+        XCTAssertEqual(historyRowCount(), 2)
     }
 
     func testQuestionIsKeptWithTheAnswer() {

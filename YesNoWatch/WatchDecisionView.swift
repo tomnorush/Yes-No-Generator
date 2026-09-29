@@ -28,13 +28,15 @@ struct WatchDecisionView: View {
     var body: some View {
         NavigationStack {
             Button(action: ask) {
+                // Copied out of the environment: the animator's closure can't read view state directly.
+                let bounces = !reduceMotion
                 VStack(spacing: 4) {
                     Text(answer.word)
                         .font(.system(size: 64, weight: .black, design: .rounded))
                         .minimumScaleFactor(0.4)
                         .lineLimit(1)
                         .keyframeAnimator(initialValue: 1.0, trigger: answerCount) { content, scale in
-                            content.scaleEffect(reduceMotion ? 1 : scale)
+                            content.scaleEffect(bounces ? scale : 1)
                         } keyframes: { _ in
                             KeyframeTrack {
                                 CubicKeyframe(0.88, duration: 0.06)

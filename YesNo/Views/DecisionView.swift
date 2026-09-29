@@ -105,6 +105,8 @@ struct DecisionView: View {
             questionFocused = false
             model.reroll()
         } label: {
+            // Copied out of the environment: the animator's closure can't read view state directly.
+            let bounces = !reduceMotion
             VStack(spacing: 16) {
                 Spacer(minLength: 0)
                 Text(model.answer.word)
@@ -113,7 +115,7 @@ struct DecisionView: View {
                     .lineLimit(1)
                     .padding(.horizontal, 24)
                     .keyframeAnimator(initialValue: 1.0, trigger: model.answerCount) { content, scale in
-                        content.scaleEffect(reduceMotion ? 1 : scale)
+                        content.scaleEffect(bounces ? scale : 1)
                     } keyframes: { _ in
                         KeyframeTrack {
                             CubicKeyframe(0.9, duration: 0.06)

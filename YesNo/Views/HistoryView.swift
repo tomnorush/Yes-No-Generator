@@ -70,7 +70,6 @@ struct HistoryView: View {
                     Text(footerText)
                 }
             }
-            .accessibilityIdentifier("history.list")
         }
     }
 
@@ -115,6 +114,7 @@ private struct HistoryRow: View {
             }
         }
         .accessibilityElement(children: .combine)
+        .accessibilityIdentifier("history.row.\(entry.id.uuidString)")
         .contextMenu {
             Button {
                 UIPasteboard.general.string = ShareText.make(
