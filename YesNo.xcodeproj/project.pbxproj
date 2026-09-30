@@ -7,73 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0693615D3EAAC37B17C39D55 /* AskIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0922F4F983700C0DCACD79F /* AskIntent.swift */; };
-		2083E5521F53FAC77331A93C /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D09B41988208317670A8E38 /* PrivacyPolicyView.swift */; };
-		2FEA43A232F28F1B521C10A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A1CC4074C7772FB19F82759 /* Assets.xcassets */; };
-		3559FEA7B6C95FFCEBBFB65F /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = A0545416A77D9B0AEB9D0F6C /* privacy.md */; };
-		3A677577F2D5DA5D5004D6BE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C90FC36006BA9425487193B2 /* PrivacyInfo.xcprivacy */; };
-		3D60CF04EF9FCF5C8E91BCE0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = EFF6EBFAC54B6288B8516095 /* PrivacyInfo.xcprivacy */; };
-		41A315A6751A187F972DD900 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF350F893341CE55F82A46EE /* HistoryView.swift */; };
-		4A341805F0AA11884EEAD349 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D85564C9C655947C549B37 /* SettingsView.swift */; };
-		522D210BAAA3241D50574535 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B3DC49900B101110D4AF29 /* AppModel.swift */; };
-		6628CCF0A0B72C8E63482336 /* WatchDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F19B068FF31AB06CD01F9B /* WatchDecisionView.swift */; };
-		6998E37E7DF7D3B1CE62ABFB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B02028590D1A50937068C9 /* Theme.swift */; };
-		72F1CEDCEA189C8FBF48597F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFA246261BB3BF1AF238389 /* Assets.xcassets */; };
-		7417EDBC98C0DD9667D55C17 /* YesNoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9031BABBAAF4537F32505F9A /* YesNoKit */; };
-		77AEC05889A700EA10FC6398 /* YesNoComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58F506F0C1DCA9791A5381 /* YesNoComplication.swift */; };
-		7FCCA4D8ABEA09E781102686 /* ProStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C9D8294F8F25C68D1E3A15 /* ProStore.swift */; };
-		889343C8081A3734A8BC5921 /* YesNoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 20D5DBE3C15C88330C88B74F /* YesNoKit */; };
-		A08D8D706C13D9D8D811188D /* YesNoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ECD563631899F6ECEBC15CDA /* YesNoWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B29CC051C21D1312E77FC9AF /* YesNoWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443045EDF77EFD5358B2FD33 /* YesNoWatchApp.swift */; };
-		B65EB7AF84F0CDF6AE3859A9 /* YesNoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE66A5C2903095827712435 /* YesNoApp.swift */; };
-		CF3B557EDF2D8CC92F6AE0B1 /* YesNoWatchWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 643032D2B8114B405E18E177 /* YesNoWatchWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DFE252CA99471B3F0FBB5CC3 /* CoreFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D46132A5BBCA50A3A598CA /* CoreFlowUITests.swift */; };
-		EA28985A2FCC6445FD7BB46F /* DecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20BDCEA47E2858B815E5ED /* DecisionView.swift */; };
+		0EB0D2D1AB87AC8D810918B3 /* YesNoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F75E1F923D769ADDFF15668 /* YesNoKit */; };
+		1851EE29F8FB2C1FFDAE2DA0 /* YesNoComplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CF99D593AA855291AD2BAF /* YesNoComplication.swift */; };
+		21684B648E935D019F4B94A1 /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = 9346CFB7E7D2E4F5CC48ACA9 /* privacy.md */; };
+		33D7830F39FC9F3D0C7ABB31 /* CoreFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1854828C21080F19C8BAED8 /* CoreFlowUITests.swift */; };
+		37D89A19A15F17616BC547CB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF065842A49FA82E82686DE /* SettingsView.swift */; };
+		37FA3E5B31C9B13BBBD5C3A6 /* WatchDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7125BFF92CAB306315DA1 /* WatchDecisionView.swift */; };
+		3FD382D6DB1DE9D0B56D862C /* YesNoKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3EA2B409D385744E1DFCEE05 /* YesNoKit */; };
+		4522672685BF15D6753B42CD /* YesNoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0D9A08CF15A8508FD862B5 /* YesNoApp.swift */; };
+		570FF86ACE5DBF529ADFA6FD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 103E3B8871021FCD74A5B8BB /* PrivacyInfo.xcprivacy */; };
+		5D994F231DCCB4AC02D4FAC3 /* AskIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8259B6927307C10D606FB7 /* AskIntent.swift */; };
+		6C7ACDD19E7CFA0CCC812794 /* ProStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F181B50A6E920ADC3C1CA117 /* ProStore.swift */; };
+		808CBB20BD6038E2A6D982FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48A290C3C22256AFDACF9DA /* Assets.xcassets */; };
+		83D6B0AA6F39BE9249BE37E7 /* YesNoWatchWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A49329CD3CAE24324B31E67 /* YesNoWatchWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		850FCFADE55A48DABEDD269D /* YesNoWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F5FE987C406757811E8F6 /* YesNoWatchApp.swift */; };
+		8AE9C37316E941C64408ECAA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 15EF5133E573203D22789A8B /* PrivacyInfo.xcprivacy */; };
+		AA3044033F69CF0EE69D1A20 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D6CCDED1ABB5B07EB528C3 /* AppModel.swift */; };
+		B0726A850538E78A4CB84AE5 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D02FD6E225638176C430F4 /* HistoryView.swift */; };
+		D4615CB6B40D9233DAC31012 /* DecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C990A2E8BBBFBEDD88A3D38 /* DecisionView.swift */; };
+		D89479A31F41213CAA979DB6 /* YesNoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D57CEF1BB1D4DC31B0A8B0B3 /* YesNoWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE75F420EC13D466C4B86E64 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B428978B89B91EEB686B5C /* PrivacyPolicyView.swift */; };
+		EAD587E845D6521CBFA00021 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA491D13480DDF96ABA08C4C /* Theme.swift */; };
+		F5413C660AE404CADF2C0411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA140A399E2809EEA2106E0D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		42D6966F82438A46390939CA /* PBXContainerItemProxy */ = {
+		153F200E00DC7D7C8730D45F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AA28D3426F0B5788A88EC8AB /* Project object */;
+			containerPortal = 41FD9DD9A620520EAF1CEBF9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1D81F9B0076AA86DDD7454C8;
+			remoteGlobalIDString = 227D7A90F8A73FCE64A27718;
+			remoteInfo = YesNoWatch;
+		};
+		1B52B83C5900F0B9C5BFD096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41FD9DD9A620520EAF1CEBF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9173B4DFBE4D67C77A5134E2;
 			remoteInfo = YesNo;
 		};
-		86AD4EABC8BFD3C428482B86 /* PBXContainerItemProxy */ = {
+		DEAA4DDEB768DE0C38E5D921 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AA28D3426F0B5788A88EC8AB /* Project object */;
+			containerPortal = 41FD9DD9A620520EAF1CEBF9 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7B43312185A0EDF2E1C400AA;
+			remoteGlobalIDString = 2371EF45C020851D5D242C2E;
 			remoteInfo = YesNoWatchWidget;
-		};
-		FFF4DF6EF1B5D34A15ACC488 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AA28D3426F0B5788A88EC8AB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53D8FD92E911D3B28E01CF97;
-			remoteInfo = YesNoWatch;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		507CFAB7DD94D0CD023A957C /* Embed Foundation Extensions */ = {
+		8948E41691E906531F47872F /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				CF3B557EDF2D8CC92F6AE0B1 /* YesNoWatchWidget.appex in Embed Foundation Extensions */,
+				83D6B0AA6F39BE9249BE37E7 /* YesNoWatchWidget.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C36F1A71F3C52C54F5508A64 /* Embed Watch Content */ = {
+		CF4D7A23E017BEF247D77ED2 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				A08D8D706C13D9D8D811188D /* YesNoWatch.app in Embed Watch Content */,
+				D89479A31F41213CAA979DB6 /* YesNoWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,274 +81,234 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1B20BDCEA47E2858B815E5ED /* DecisionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DecisionView.swift; sourceTree = "<group>"; };
-		3A1CC4074C7772FB19F82759 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3AFBE89EAB8D660E2E08E6E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		443045EDF77EFD5358B2FD33 /* YesNoWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YesNoWatchApp.swift; sourceTree = "<group>"; };
-		44B02028590D1A50937068C9 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		44F19B068FF31AB06CD01F9B /* WatchDecisionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchDecisionView.swift; sourceTree = "<group>"; };
-		4FC48679E25AAF0A0FDB8AEB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		5A33B71DF77A585F502D7F6C /* Shared.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
-		5D09B41988208317670A8E38 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
-		61CD00301AF6652B000937DC /* YesNo.storekit */ = {isa = PBXFileReference; includeInIndex = 1; path = YesNo.storekit; sourceTree = "<group>"; };
-		63D46132A5BBCA50A3A598CA /* CoreFlowUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoreFlowUITests.swift; sourceTree = "<group>"; };
-		643032D2B8114B405E18E177 /* YesNoWatchWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YesNoWatchWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		7265531C0967C080211E3C82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77D85564C9C655947C549B37 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		7DE66A5C2903095827712435 /* YesNoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YesNoApp.swift; sourceTree = "<group>"; };
-		8B14B7387A64DBBFD043999C /* YesNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0545416A77D9B0AEB9D0F6C /* privacy.md */ = {isa = PBXFileReference; includeInIndex = 1; path = privacy.md; sourceTree = "<group>"; };
-		AD58F506F0C1DCA9791A5381 /* YesNoComplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YesNoComplication.swift; sourceTree = "<group>"; };
-		C90FC36006BA9425487193B2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		CBFA246261BB3BF1AF238389 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE23D2D89A045A30BFFB81D7 /* YesNoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YesNoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0922F4F983700C0DCACD79F /* AskIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AskIntent.swift; sourceTree = "<group>"; };
-		D5C5A05742084978DEB25EB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1B3DC49900B101110D4AF29 /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		E5C9D8294F8F25C68D1E3A15 /* ProStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProStore.swift; sourceTree = "<group>"; };
-		ECD563631899F6ECEBC15CDA /* YesNoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesNoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFF6EBFAC54B6288B8516095 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		FF350F893341CE55F82A46EE /* HistoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		03C41219735819AA8C1F41E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		103E3B8871021FCD74A5B8BB /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		10A75AC825C3F7DA18731AF4 /* YesNo.storekit */ = {isa = PBXFileReference; includeInIndex = 1; path = YesNo.storekit; sourceTree = "<group>"; };
+		1366D292BDCA04ABCAFF8BB5 /* YesNoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YesNoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15EF5133E573203D22789A8B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1A49329CD3CAE24324B31E67 /* YesNoWatchWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YesNoWatchWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C8259B6927307C10D606FB7 /* AskIntent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AskIntent.swift; sourceTree = "<group>"; };
+		2DF065842A49FA82E82686DE /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		35CF99D593AA855291AD2BAF /* YesNoComplication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YesNoComplication.swift; sourceTree = "<group>"; };
+		4DE7125BFF92CAB306315DA1 /* WatchDecisionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WatchDecisionView.swift; sourceTree = "<group>"; };
+		5C4F5FE987C406757811E8F6 /* YesNoWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YesNoWatchApp.swift; sourceTree = "<group>"; };
+		6C0D9A08CF15A8508FD862B5 /* YesNoApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = YesNoApp.swift; sourceTree = "<group>"; };
+		6C990A2E8BBBFBEDD88A3D38 /* DecisionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DecisionView.swift; sourceTree = "<group>"; };
+		6E97A33170C87C20C4F58D59 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6F41AE3BD3E1467F02D94476 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9346CFB7E7D2E4F5CC48ACA9 /* privacy.md */ = {isa = PBXFileReference; includeInIndex = 1; path = privacy.md; sourceTree = "<group>"; };
+		9732EF54EB35A35AE6CFDC41 /* Shared.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		A48A290C3C22256AFDACF9DA /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0604D170ABAA80EC00B4150 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D02FD6E225638176C430F4 /* HistoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		C9B428978B89B91EEB686B5C /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		D1854828C21080F19C8BAED8 /* CoreFlowUITests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CoreFlowUITests.swift; sourceTree = "<group>"; };
+		D2D6CCDED1ABB5B07EB528C3 /* AppModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D3E189A6A125B3EAECEB08B2 /* YesNo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesNo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D57CEF1BB1D4DC31B0A8B0B3 /* YesNoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesNoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA491D13480DDF96ABA08C4C /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F181B50A6E920ADC3C1CA117 /* ProStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProStore.swift; sourceTree = "<group>"; };
+		FA140A399E2809EEA2106E0D /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5C57FE2DDE9406FFC3F8D509 /* Frameworks */ = {
+		61DCB3CF5238BD0F07FD8ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EB0D2D1AB87AC8D810918B3 /* YesNoKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71B25560AE02D67666E7E086 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8157651E454BDF5BDCD9088D /* Frameworks */ = {
+		A50B6F2C02485F5C204D0FF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5B1144FEBE7256C1FAF4828 /* Frameworks */ = {
+		C93C2163EDC7DECEEF99BC19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889343C8081A3734A8BC5921 /* YesNoKit in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FF9C78E1B0ED7BC9DC55B249 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7417EDBC98C0DD9667D55C17 /* YesNoKit in Frameworks */,
+				3FD382D6DB1DE9D0B56D862C /* YesNoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B6B295053C4821F4A650A62 = {
+		3E3F5F0BCEB39F50C31624A5 /* YesNoWatchWidget */ = {
 			isa = PBXGroup;
 			children = (
-				8BAF1B3F2DC2792D8AB62F80 /* Config */,
-				67819E4ED9762BCE0D5C60F5 /* docs */,
-				9F6C670C96188162C3C42B47 /* Products */,
-				C3647B01D0A31741BF42B5A9 /* YesNo */,
-				6ABC04BAB5E15CA8087AEDD3 /* YesNoUITests */,
-				4D778B8F8E4E87426B224C50 /* YesNoWatch */,
-				46ECFC239E7F7B51AE745AE0 /* YesNoWatchWidget */,
-				4FC48679E25AAF0A0FDB8AEB /* README.md */,
-				61CD00301AF6652B000937DC /* YesNo.storekit */,
-			);
-			sourceTree = "<group>";
-		};
-		317590D8B6EDC8CC17CA9CE2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				1B20BDCEA47E2858B815E5ED /* DecisionView.swift */,
-				FF350F893341CE55F82A46EE /* HistoryView.swift */,
-				5D09B41988208317670A8E38 /* PrivacyPolicyView.swift */,
-				77D85564C9C655947C549B37 /* SettingsView.swift */,
-			);
-			name = Views;
-			path = Views;
-			sourceTree = "<group>";
-		};
-		46ECFC239E7F7B51AE745AE0 /* YesNoWatchWidget */ = {
-			isa = PBXGroup;
-			children = (
-				3AFBE89EAB8D660E2E08E6E7 /* Info.plist */,
-				AD58F506F0C1DCA9791A5381 /* YesNoComplication.swift */,
+				03C41219735819AA8C1F41E5 /* Info.plist */,
+				35CF99D593AA855291AD2BAF /* YesNoComplication.swift */,
 			);
 			name = YesNoWatchWidget;
 			path = YesNoWatchWidget;
 			sourceTree = "<group>";
 		};
-		4D778B8F8E4E87426B224C50 /* YesNoWatch */ = {
+		42176A4EB0C58811DD2024A4 /* docs */ = {
 			isa = PBXGroup;
 			children = (
-				CBFA246261BB3BF1AF238389 /* Assets.xcassets */,
-				7265531C0967C080211E3C82 /* Info.plist */,
-				C90FC36006BA9425487193B2 /* PrivacyInfo.xcprivacy */,
-				44F19B068FF31AB06CD01F9B /* WatchDecisionView.swift */,
-				443045EDF77EFD5358B2FD33 /* YesNoWatchApp.swift */,
-			);
-			name = YesNoWatch;
-			path = YesNoWatch;
-			sourceTree = "<group>";
-		};
-		67819E4ED9762BCE0D5C60F5 /* docs */ = {
-			isa = PBXGroup;
-			children = (
-				A0545416A77D9B0AEB9D0F6C /* privacy.md */,
+				9346CFB7E7D2E4F5CC48ACA9 /* privacy.md */,
 			);
 			name = docs;
 			path = docs;
 			sourceTree = "<group>";
 		};
-		6ABC04BAB5E15CA8087AEDD3 /* YesNoUITests */ = {
+		662E1CD86536D722C3984439 /* YesNo */ = {
 			isa = PBXGroup;
 			children = (
-				63D46132A5BBCA50A3A598CA /* CoreFlowUITests.swift */,
-			);
-			name = YesNoUITests;
-			path = YesNoUITests;
-			sourceTree = "<group>";
-		};
-		8BAF1B3F2DC2792D8AB62F80 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				5A33B71DF77A585F502D7F6C /* Shared.xcconfig */,
-			);
-			name = Config;
-			path = Config;
-			sourceTree = "<group>";
-		};
-		96BC616653217DD60502675E /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				E5C9D8294F8F25C68D1E3A15 /* ProStore.swift */,
-			);
-			name = Store;
-			path = Store;
-			sourceTree = "<group>";
-		};
-		9F6C670C96188162C3C42B47 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8B14B7387A64DBBFD043999C /* YesNo.app */,
-				CE23D2D89A045A30BFFB81D7 /* YesNoUITests.xctest */,
-				ECD563631899F6ECEBC15CDA /* YesNoWatch.app */,
-				643032D2B8114B405E18E177 /* YesNoWatchWidget.appex */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A0C80E3E3413C79548DE7D78 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				E1B3DC49900B101110D4AF29 /* AppModel.swift */,
-				44B02028590D1A50937068C9 /* Theme.swift */,
-			);
-			name = Model;
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C3647B01D0A31741BF42B5A9 /* YesNo */ = {
-			isa = PBXGroup;
-			children = (
-				F6BED62182E00687F7DE9868 /* Intents */,
-				A0C80E3E3413C79548DE7D78 /* Model */,
-				96BC616653217DD60502675E /* Store */,
-				317590D8B6EDC8CC17CA9CE2 /* Views */,
-				3A1CC4074C7772FB19F82759 /* Assets.xcassets */,
-				D5C5A05742084978DEB25EB2 /* Info.plist */,
-				EFF6EBFAC54B6288B8516095 /* PrivacyInfo.xcprivacy */,
-				7DE66A5C2903095827712435 /* YesNoApp.swift */,
+				8B8010F65AA4F7D770281D45 /* Intents */,
+				DDEF521F1E50CD404A91DF62 /* Model */,
+				F49B608787F1467AB00AF928 /* Store */,
+				933E0BFD4504EC41AE3ED772 /* Views */,
+				A48A290C3C22256AFDACF9DA /* Assets.xcassets */,
+				6F41AE3BD3E1467F02D94476 /* Info.plist */,
+				103E3B8871021FCD74A5B8BB /* PrivacyInfo.xcprivacy */,
+				6C0D9A08CF15A8508FD862B5 /* YesNoApp.swift */,
 			);
 			name = YesNo;
 			path = YesNo;
 			sourceTree = "<group>";
 		};
-		F6BED62182E00687F7DE9868 /* Intents */ = {
+		875E0DDE7317D12D4795F1B6 /* YesNoWatch */ = {
 			isa = PBXGroup;
 			children = (
-				D0922F4F983700C0DCACD79F /* AskIntent.swift */,
+				FA140A399E2809EEA2106E0D /* Assets.xcassets */,
+				C0604D170ABAA80EC00B4150 /* Info.plist */,
+				15EF5133E573203D22789A8B /* PrivacyInfo.xcprivacy */,
+				4DE7125BFF92CAB306315DA1 /* WatchDecisionView.swift */,
+				5C4F5FE987C406757811E8F6 /* YesNoWatchApp.swift */,
+			);
+			name = YesNoWatch;
+			path = YesNoWatch;
+			sourceTree = "<group>";
+		};
+		8B8010F65AA4F7D770281D45 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				1C8259B6927307C10D606FB7 /* AskIntent.swift */,
 			);
 			name = Intents;
 			path = Intents;
 			sourceTree = "<group>";
 		};
+		933E0BFD4504EC41AE3ED772 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C990A2E8BBBFBEDD88A3D38 /* DecisionView.swift */,
+				C6D02FD6E225638176C430F4 /* HistoryView.swift */,
+				C9B428978B89B91EEB686B5C /* PrivacyPolicyView.swift */,
+				2DF065842A49FA82E82686DE /* SettingsView.swift */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDEF521F1E50CD404A91DF62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2D6CCDED1ABB5B07EB528C3 /* AppModel.swift */,
+				EA491D13480DDF96ABA08C4C /* Theme.swift */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFDCD57268D665D1450C9944 /* YesNoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1854828C21080F19C8BAED8 /* CoreFlowUITests.swift */,
+			);
+			name = YesNoUITests;
+			path = YesNoUITests;
+			sourceTree = "<group>";
+		};
+		EB419E0AF0E6E2CFCA82A65D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3E189A6A125B3EAECEB08B2 /* YesNo.app */,
+				1366D292BDCA04ABCAFF8BB5 /* YesNoUITests.xctest */,
+				D57CEF1BB1D4DC31B0A8B0B3 /* YesNoWatch.app */,
+				1A49329CD3CAE24324B31E67 /* YesNoWatchWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F119387E3EDE5AEAB0976DFB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				9732EF54EB35A35AE6CFDC41 /* Shared.xcconfig */,
+			);
+			name = Config;
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F49B608787F1467AB00AF928 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F181B50A6E920ADC3C1CA117 /* ProStore.swift */,
+			);
+			name = Store;
+			path = Store;
+			sourceTree = "<group>";
+		};
+		F8DFA861B4B83D679EA047C0 = {
+			isa = PBXGroup;
+			children = (
+				F119387E3EDE5AEAB0976DFB /* Config */,
+				42176A4EB0C58811DD2024A4 /* docs */,
+				EB419E0AF0E6E2CFCA82A65D /* Products */,
+				662E1CD86536D722C3984439 /* YesNo */,
+				DFDCD57268D665D1450C9944 /* YesNoUITests */,
+				875E0DDE7317D12D4795F1B6 /* YesNoWatch */,
+				3E3F5F0BCEB39F50C31624A5 /* YesNoWatchWidget */,
+				6E97A33170C87C20C4F58D59 /* README.md */,
+				10A75AC825C3F7DA18731AF4 /* YesNo.storekit */,
+			);
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D81F9B0076AA86DDD7454C8 /* YesNo */ = {
+		227D7A90F8A73FCE64A27718 /* YesNoWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D26C8A0F198534F9693B94A /* Build configuration list for PBXNativeTarget "YesNo" */;
+			buildConfigurationList = 5EA20C22CCBA6BABD433D8AC /* Build configuration list for PBXNativeTarget "YesNoWatch" */;
 			buildPhases = (
-				782E361FEBCABF1C83E35177 /* Sources */,
-				D5B1144FEBE7256C1FAF4828 /* Frameworks */,
-				2C84FCCF545BE287FF6A6672 /* Resources */,
-				C36F1A71F3C52C54F5508A64 /* Embed Watch Content */,
+				1433777769C43122EC74A926 /* Sources */,
+				C93C2163EDC7DECEEF99BC19 /* Frameworks */,
+				2216E5874B6B7C9F75F3663D /* Resources */,
+				8948E41691E906531F47872F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				867DAB2C071B7B32D13BE954 /* PBXTargetDependency */,
-			);
-			name = YesNo;
-			packageProductDependencies = (
-				20D5DBE3C15C88330C88B74F /* YesNoKit */,
-			);
-			productName = YesNo;
-			productReference = 8B14B7387A64DBBFD043999C /* YesNo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		52065D11894BFDE9425AE1AF /* YesNoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EA573F56323F563A50403E01 /* Build configuration list for PBXNativeTarget "YesNoUITests" */;
-			buildPhases = (
-				B19964E2AA5E3949E392194A /* Sources */,
-				5C57FE2DDE9406FFC3F8D509 /* Frameworks */,
-				CCD648D27876177B1D3063FB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				62B70ECB5097F8BFC579F74E /* PBXTargetDependency */,
-			);
-			name = YesNoUITests;
-			productName = YesNoUITests;
-			productReference = CE23D2D89A045A30BFFB81D7 /* YesNoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		53D8FD92E911D3B28E01CF97 /* YesNoWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EAAC1CC6705AC335A5898811 /* Build configuration list for PBXNativeTarget "YesNoWatch" */;
-			buildPhases = (
-				B35823BEFED975E098F50C93 /* Sources */,
-				FF9C78E1B0ED7BC9DC55B249 /* Frameworks */,
-				6F6FFCDA0D459BD56E76D426 /* Resources */,
-				507CFAB7DD94D0CD023A957C /* Embed Foundation Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5BF3EAB4BAF9EA7C3DE35718 /* PBXTargetDependency */,
+				FA5034C1E1FDFB71D800BA5C /* PBXTargetDependency */,
 			);
 			name = YesNoWatch;
 			packageProductDependencies = (
-				9031BABBAAF4537F32505F9A /* YesNoKit */,
+				3EA2B409D385744E1DFCEE05 /* YesNoKit */,
 			);
 			productName = YesNoWatch;
-			productReference = ECD563631899F6ECEBC15CDA /* YesNoWatch.app */;
+			productReference = D57CEF1BB1D4DC31B0A8B0B3 /* YesNoWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7B43312185A0EDF2E1C400AA /* YesNoWatchWidget */ = {
+		2371EF45C020851D5D242C2E /* YesNoWatchWidget */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8ECF63E7F04AE0EFA35E371 /* Build configuration list for PBXNativeTarget "YesNoWatchWidget" */;
+			buildConfigurationList = 05A9623C61EBB19D0D3D80EA /* Build configuration list for PBXNativeTarget "YesNoWatchWidget" */;
 			buildPhases = (
-				6F29D679D771A60C74069AFC /* Sources */,
-				8157651E454BDF5BDCD9088D /* Frameworks */,
-				0E2824594103DE530DE71452 /* Resources */,
+				DE87F97D895DCEE3D2143073 /* Sources */,
+				A50B6F2C02485F5C204D0FF5 /* Frameworks */,
+				F0E85E64C967EEC92D10E34D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -356,35 +316,75 @@
 			);
 			name = YesNoWatchWidget;
 			productName = YesNoWatchWidget;
-			productReference = 643032D2B8114B405E18E177 /* YesNoWatchWidget.appex */;
+			productReference = 1A49329CD3CAE24324B31E67 /* YesNoWatchWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		48F75FB8A761D66A16CC4D05 /* YesNoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48C02CCB7812A3A0625F7B03 /* Build configuration list for PBXNativeTarget "YesNoUITests" */;
+			buildPhases = (
+				95157090EFD52F24ED54DB7E /* Sources */,
+				71B25560AE02D67666E7E086 /* Frameworks */,
+				22F85B068A110AC7E481BEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E24B1EF53D39BCC266A0F3C /* PBXTargetDependency */,
+			);
+			name = YesNoUITests;
+			productName = YesNoUITests;
+			productReference = 1366D292BDCA04ABCAFF8BB5 /* YesNoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9173B4DFBE4D67C77A5134E2 /* YesNo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43A78A7DAF936299D737EAF /* Build configuration list for PBXNativeTarget "YesNo" */;
+			buildPhases = (
+				EDC0CE1F2935F474F5485A1D /* Sources */,
+				61DCB3CF5238BD0F07FD8ED0 /* Frameworks */,
+				C4F9C35BE99DC6154E58D7B3 /* Resources */,
+				CF4D7A23E017BEF247D77ED2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76913D4E1DF21B7E0B58DA50 /* PBXTargetDependency */,
+			);
+			name = YesNo;
+			packageProductDependencies = (
+				6F75E1F923D769ADDFF15668 /* YesNoKit */,
+			);
+			productName = YesNo;
+			productReference = D3E189A6A125B3EAECEB08B2 /* YesNo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AA28D3426F0B5788A88EC8AB /* Project object */ = {
+		41FD9DD9A620520EAF1CEBF9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					1D81F9B0076AA86DDD7454C8 = {
+					227D7A90F8A73FCE64A27718 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					52065D11894BFDE9425AE1AF = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 1D81F9B0076AA86DDD7454C8;
-					};
-					53D8FD92E911D3B28E01CF97 = {
+					2371EF45C020851D5D242C2E = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					7B43312185A0EDF2E1C400AA = {
+					48F75FB8A761D66A16CC4D05 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 9173B4DFBE4D67C77A5134E2;
+					};
+					9173B4DFBE4D67C77A5134E2 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = F93455F2DCA5502CE5BFD3E6 /* Build configuration list for PBXProject "YesNo" */;
+			buildConfigurationList = 35993BAD24F185E72997F50D /* Build configuration list for PBXProject "YesNo" */;
 			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -392,52 +392,52 @@
 				en,
 				Base,
 			);
-			mainGroup = 0B6B295053C4821F4A650A62;
+			mainGroup = F8DFA861B4B83D679EA047C0;
 			minimizedProjectReferenceProxies = 0;
 			packageReferences = (
-				A4C6B0D040756EF9A5F88223 /* XCLocalSwiftPackageReference "YesNoKit" */,
+				CBA0325355F7E7BBB9120F41 /* XCLocalSwiftPackageReference "YesNoKit" */,
 			);
 			preferredProjectObjectVersion = 63;
-			productRefGroup = 9F6C670C96188162C3C42B47 /* Products */;
+			productRefGroup = EB419E0AF0E6E2CFCA82A65D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D81F9B0076AA86DDD7454C8 /* YesNo */,
-				52065D11894BFDE9425AE1AF /* YesNoUITests */,
-				53D8FD92E911D3B28E01CF97 /* YesNoWatch */,
-				7B43312185A0EDF2E1C400AA /* YesNoWatchWidget */,
+				9173B4DFBE4D67C77A5134E2 /* YesNo */,
+				48F75FB8A761D66A16CC4D05 /* YesNoUITests */,
+				227D7A90F8A73FCE64A27718 /* YesNoWatch */,
+				2371EF45C020851D5D242C2E /* YesNoWatchWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0E2824594103DE530DE71452 /* Resources */ = {
+		2216E5874B6B7C9F75F3663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5413C660AE404CADF2C0411 /* Assets.xcassets in Resources */,
+				8AE9C37316E941C64408ECAA /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F85B068A110AC7E481BEAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C84FCCF545BE287FF6A6672 /* Resources */ = {
+		C4F9C35BE99DC6154E58D7B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FEA43A232F28F1B521C10A9 /* Assets.xcassets in Resources */,
-				3559FEA7B6C95FFCEBBFB65F /* privacy.md in Resources */,
-				3D60CF04EF9FCF5C8E91BCE0 /* PrivacyInfo.xcprivacy in Resources */,
+				808CBB20BD6038E2A6D982FE /* Assets.xcassets in Resources */,
+				21684B648E935D019F4B94A1 /* privacy.md in Resources */,
+				570FF86ACE5DBF529ADFA6FD /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F6FFCDA0D459BD56E76D426 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				72F1CEDCEA189C8FBF48597F /* Assets.xcassets in Resources */,
-				3A677577F2D5DA5D5004D6BE /* PrivacyInfo.xcprivacy in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CCD648D27876177B1D3063FB /* Resources */ = {
+		F0E85E64C967EEC92D10E34D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -447,196 +447,134 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6F29D679D771A60C74069AFC /* Sources */ = {
+		1433777769C43122EC74A926 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77AEC05889A700EA10FC6398 /* YesNoComplication.swift in Sources */,
+				37FA3E5B31C9B13BBBD5C3A6 /* WatchDecisionView.swift in Sources */,
+				850FCFADE55A48DABEDD269D /* YesNoWatchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		782E361FEBCABF1C83E35177 /* Sources */ = {
+		95157090EFD52F24ED54DB7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522D210BAAA3241D50574535 /* AppModel.swift in Sources */,
-				0693615D3EAAC37B17C39D55 /* AskIntent.swift in Sources */,
-				EA28985A2FCC6445FD7BB46F /* DecisionView.swift in Sources */,
-				41A315A6751A187F972DD900 /* HistoryView.swift in Sources */,
-				2083E5521F53FAC77331A93C /* PrivacyPolicyView.swift in Sources */,
-				7FCCA4D8ABEA09E781102686 /* ProStore.swift in Sources */,
-				4A341805F0AA11884EEAD349 /* SettingsView.swift in Sources */,
-				6998E37E7DF7D3B1CE62ABFB /* Theme.swift in Sources */,
-				B65EB7AF84F0CDF6AE3859A9 /* YesNoApp.swift in Sources */,
+				33D7830F39FC9F3D0C7ABB31 /* CoreFlowUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B19964E2AA5E3949E392194A /* Sources */ = {
+		DE87F97D895DCEE3D2143073 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE252CA99471B3F0FBB5CC3 /* CoreFlowUITests.swift in Sources */,
+				1851EE29F8FB2C1FFDAE2DA0 /* YesNoComplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B35823BEFED975E098F50C93 /* Sources */ = {
+		EDC0CE1F2935F474F5485A1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6628CCF0A0B72C8E63482336 /* WatchDecisionView.swift in Sources */,
-				B29CC051C21D1312E77FC9AF /* YesNoWatchApp.swift in Sources */,
+				AA3044033F69CF0EE69D1A20 /* AppModel.swift in Sources */,
+				5D994F231DCCB4AC02D4FAC3 /* AskIntent.swift in Sources */,
+				D4615CB6B40D9233DAC31012 /* DecisionView.swift in Sources */,
+				B0726A850538E78A4CB84AE5 /* HistoryView.swift in Sources */,
+				DE75F420EC13D466C4B86E64 /* PrivacyPolicyView.swift in Sources */,
+				6C7ACDD19E7CFA0CCC812794 /* ProStore.swift in Sources */,
+				37D89A19A15F17616BC547CB /* SettingsView.swift in Sources */,
+				EAD587E845D6521CBFA00021 /* Theme.swift in Sources */,
+				4522672685BF15D6753B42CD /* YesNoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5BF3EAB4BAF9EA7C3DE35718 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YesNoWatchWidget;
-			target = 7B43312185A0EDF2E1C400AA /* YesNoWatchWidget */;
-			targetProxy = 86AD4EABC8BFD3C428482B86 /* PBXContainerItemProxy */;
-		};
-		62B70ECB5097F8BFC579F74E /* PBXTargetDependency */ = {
+		3E24B1EF53D39BCC266A0F3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YesNo;
-			target = 1D81F9B0076AA86DDD7454C8 /* YesNo */;
-			targetProxy = 42D6966F82438A46390939CA /* PBXContainerItemProxy */;
+			target = 9173B4DFBE4D67C77A5134E2 /* YesNo */;
+			targetProxy = 1B52B83C5900F0B9C5BFD096 /* PBXContainerItemProxy */;
 		};
-		867DAB2C071B7B32D13BE954 /* PBXTargetDependency */ = {
+		76913D4E1DF21B7E0B58DA50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YesNoWatch;
-			target = 53D8FD92E911D3B28E01CF97 /* YesNoWatch */;
-			targetProxy = FFF4DF6EF1B5D34A15ACC488 /* PBXContainerItemProxy */;
+			target = 227D7A90F8A73FCE64A27718 /* YesNoWatch */;
+			targetProxy = 153F200E00DC7D7C8730D45F /* PBXContainerItemProxy */;
+		};
+		FA5034C1E1FDFB71D800BA5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YesNoWatchWidget;
+			target = 2371EF45C020851D5D242C2E /* YesNoWatchWidget */;
+			targetProxy = DEAA4DDEB768DE0C38E5D921 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		32476F3AE63E5B189BB4DDEC /* Debug */ = {
+		101F3C0A3B71334DAF4ABD86 /* Offline */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9732EF54EB35A35AE6CFDC41 /* Shared.xcconfig */;
 			buildSettings = {
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).uitests";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YesNo;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "OFFLINE $(inherited)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Offline;
 		};
-		3E01FE5B92BB6C319CB0F4F5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YesNo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		43F4FE9597039450BC34A63D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YesNoWatchWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).watchkitapp.complication";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Debug;
-		};
-		64A64E503C4D65B90944B1E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YesNo/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		6DCC5AB0BA049994C9876BC2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YesNoWatch/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "$(BUNDLE_ID_BASE)";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Debug;
-		};
-		926EE8E58CE1D17F44DF63AA /* Release */ = {
+		1ABF58A6933652E037530BA5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GENERATE_INFOPLIST_FILE = YES;
@@ -656,34 +594,9 @@
 			};
 			name = Release;
 		};
-		929C3623F05EEBFF3CADB9C0 /* Release */ = {
+		2858F58B66F090E4E34F2620 /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YesNoWatch/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "$(BUNDLE_ID_BASE)";
-				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-			};
-			name = Release;
-		};
-		A6EDFA3CE6F5AC487833A0A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A33B71DF77A585F502D7F6C /* Shared.xcconfig */;
+			baseConfigurationReference = 9732EF54EB35A35AE6CFDC41 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -742,28 +655,139 @@
 			};
 			name = Release;
 		};
-		B40DC2DB0286014C2E2DB992 /* Release */ = {
+		3C3CFAB4915F9AF3DB629BAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YesNoWatchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).watchkitapp.complication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		3C5AB4811D406213249E7308 /* Offline */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YesNoWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "$(BUNDLE_ID_BASE)";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Offline;
+		};
+		3EAA5324FD05FE45D2A2D634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YesNo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).uitests";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = YesNo;
+			};
+			name = Debug;
+		};
+		446171160DDAE8EBCA3D9170 /* Offline */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YesNo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Offline;
+		};
+		45616A9539917758D0465030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YesNoWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "$(BUNDLE_ID_BASE)";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
-		DCC33A817AB58A2BB11BB16B /* Debug */ = {
+		64CBF6050BAEAF531D6CA9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A33B71DF77A585F502D7F6C /* Shared.xcconfig */;
+			baseConfigurationReference = 9732EF54EB35A35AE6CFDC41 /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -828,50 +852,187 @@
 			};
 			name = Debug;
 		};
+		A46E4501EDE053F67C459475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YesNoWatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "$(BUNDLE_ID_BASE)";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		A4ACAABC3518A369768763D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YesNo;
+			};
+			name = Release;
+		};
+		BDFBA9198E2876E3F0A06AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YesNo;
+			};
+			name = Debug;
+		};
+		CB75CD0CA66EB4DF4DC33C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YesNo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E57B8AB6427A6800B0364515 /* Offline */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YesNoWatchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Yes or No";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).watchkitapp.complication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Offline;
+		};
+		EFAE69F95DDFCE57B4B04C85 /* Offline */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_BASE).uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YesNo;
+			};
+			name = Offline;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D26C8A0F198534F9693B94A /* Build configuration list for PBXNativeTarget "YesNo" */ = {
+		05A9623C61EBB19D0D3D80EA /* Build configuration list for PBXNativeTarget "YesNoWatchWidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3E01FE5B92BB6C319CB0F4F5 /* Debug */,
-				64A64E503C4D65B90944B1E2 /* Release */,
+				3C3CFAB4915F9AF3DB629BAA /* Debug */,
+				E57B8AB6427A6800B0364515 /* Offline */,
+				1ABF58A6933652E037530BA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E8ECF63E7F04AE0EFA35E371 /* Build configuration list for PBXNativeTarget "YesNoWatchWidget" */ = {
+		35993BAD24F185E72997F50D /* Build configuration list for PBXProject "YesNo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43F4FE9597039450BC34A63D /* Debug */,
-				926EE8E58CE1D17F44DF63AA /* Release */,
+				64CBF6050BAEAF531D6CA9EE /* Debug */,
+				101F3C0A3B71334DAF4ABD86 /* Offline */,
+				2858F58B66F090E4E34F2620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA573F56323F563A50403E01 /* Build configuration list for PBXNativeTarget "YesNoUITests" */ = {
+		48C02CCB7812A3A0625F7B03 /* Build configuration list for PBXNativeTarget "YesNoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32476F3AE63E5B189BB4DDEC /* Debug */,
-				B40DC2DB0286014C2E2DB992 /* Release */,
+				BDFBA9198E2876E3F0A06AD0 /* Debug */,
+				EFAE69F95DDFCE57B4B04C85 /* Offline */,
+				A4ACAABC3518A369768763D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAAC1CC6705AC335A5898811 /* Build configuration list for PBXNativeTarget "YesNoWatch" */ = {
+		5EA20C22CCBA6BABD433D8AC /* Build configuration list for PBXNativeTarget "YesNoWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6DCC5AB0BA049994C9876BC2 /* Debug */,
-				929C3623F05EEBFF3CADB9C0 /* Release */,
+				A46E4501EDE053F67C459475 /* Debug */,
+				3C5AB4811D406213249E7308 /* Offline */,
+				45616A9539917758D0465030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F93455F2DCA5502CE5BFD3E6 /* Build configuration list for PBXProject "YesNo" */ = {
+		C43A78A7DAF936299D737EAF /* Build configuration list for PBXNativeTarget "YesNo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCC33A817AB58A2BB11BB16B /* Debug */,
-				A6EDFA3CE6F5AC487833A0A0 /* Release */,
+				3EAA5324FD05FE45D2A2D634 /* Debug */,
+				446171160DDAE8EBCA3D9170 /* Offline */,
+				CB75CD0CA66EB4DF4DC33C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -879,22 +1040,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		A4C6B0D040756EF9A5F88223 /* XCLocalSwiftPackageReference "YesNoKit" */ = {
+		CBA0325355F7E7BBB9120F41 /* XCLocalSwiftPackageReference "YesNoKit" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = YesNoKit;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		20D5DBE3C15C88330C88B74F /* YesNoKit */ = {
+		3EA2B409D385744E1DFCEE05 /* YesNoKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = YesNoKit;
 		};
-		9031BABBAAF4537F32505F9A /* YesNoKit */ = {
+		6F75E1F923D769ADDFF15668 /* YesNoKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = YesNoKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = AA28D3426F0B5788A88EC8AB /* Project object */;
+	rootObject = 41FD9DD9A620520EAF1CEBF9 /* Project object */;
 }

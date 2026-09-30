@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1D81F9B0076AA86DDD7454C8"
+               BlueprintIdentifier = "9173B4DFBE4D67C77A5134E2"
                BuildableName = "YesNo.app"
                BlueprintName = "YesNo"
                ReferencedContainer = "container:YesNo.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52065D11894BFDE9425AE1AF"
+               BlueprintIdentifier = "48F75FB8A761D66A16CC4D05"
                BuildableName = "YesNoUITests.xctest"
                BlueprintName = "YesNoUITests"
                ReferencedContainer = "container:YesNo.xcodeproj">
@@ -44,7 +44,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D81F9B0076AA86DDD7454C8"
+            BlueprintIdentifier = "9173B4DFBE4D67C77A5134E2"
             BuildableName = "YesNo.app"
             BlueprintName = "YesNo"
             ReferencedContainer = "container:YesNo.xcodeproj">
@@ -55,7 +55,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52065D11894BFDE9425AE1AF"
+               BlueprintIdentifier = "48F75FB8A761D66A16CC4D05"
                BuildableName = "YesNoUITests.xctest"
                BlueprintName = "YesNoUITests"
                ReferencedContainer = "container:YesNo.xcodeproj">
@@ -77,7 +77,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D81F9B0076AA86DDD7454C8"
+            BlueprintIdentifier = "9173B4DFBE4D67C77A5134E2"
             BuildableName = "YesNo.app"
             BlueprintName = "YesNo"
             ReferencedContainer = "container:YesNo.xcodeproj">
@@ -97,7 +97,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1D81F9B0076AA86DDD7454C8"
+            BlueprintIdentifier = "9173B4DFBE4D67C77A5134E2"
             BuildableName = "YesNo.app"
             BlueprintName = "YesNo"
             ReferencedContainer = "container:YesNo.xcodeproj">

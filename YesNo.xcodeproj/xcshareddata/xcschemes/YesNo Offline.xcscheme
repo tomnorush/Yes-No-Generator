@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "227D7A90F8A73FCE64A27718"
-               BuildableName = "YesNoWatch.app"
-               BlueprintName = "YesNoWatch"
+               BlueprintIdentifier = "9173B4DFBE4D67C77A5134E2"
+               BuildableName = "YesNo.app"
+               BlueprintName = "YesNo"
                ReferencedContainer = "container:YesNo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,9 +30,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "227D7A90F8A73FCE64A27718"
-            BuildableName = "YesNoWatch.app"
-            BlueprintName = "YesNoWatch"
+            BlueprintIdentifier = "9173B4DFBE4D67C77A5134E2"
+            BuildableName = "YesNo.app"
+            BlueprintName = "YesNo"
             ReferencedContainer = "container:YesNo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -40,7 +40,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Offline"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -53,15 +53,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "227D7A90F8A73FCE64A27718"
-            BuildableName = "YesNoWatch.app"
-            BlueprintName = "YesNoWatch"
+            BlueprintIdentifier = "9173B4DFBE4D67C77A5134E2"
+            BuildableName = "YesNo.app"
+            BlueprintName = "YesNo"
             ReferencedContainer = "container:YesNo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Offline"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -70,9 +70,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "227D7A90F8A73FCE64A27718"
-            BuildableName = "YesNoWatch.app"
-            BlueprintName = "YesNoWatch"
+            BlueprintIdentifier = "9173B4DFBE4D67C77A5134E2"
+            BuildableName = "YesNo.app"
+            BlueprintName = "YesNo"
             ReferencedContainer = "container:YesNo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,7 +81,7 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Offline"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

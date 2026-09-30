@@ -1,0 +1,52 @@
+name: Offline build (.ipa)
+
+# Unsigned .ipa files of the Offline configuration (all features unlocked, no App Store),
+# ready to sideload onto your own iPhone. See INSTALL.md.
+# Download them from this workflow run's "Artifacts". Pushing a tag like v0.1.0
+# also attaches them to a GitHub Release, which is easier to open on a phone.
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: offline-ipa-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write # only used to attach files to a Release on version tags
+
+jobs:
+  ipa:
+    name: Build Offline .ipa
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Xcode
+        run: xcodebuild -version
+
+      - name: Build
+        run: scripts/build_offline_ipa.sh build
+
+      - name: Offline flag is compiled in
+        run: |
+          # The Offline build shows an "Offline Build" section in Settings; its text must be in the binary.
+          strings -a build/YesNo-Offline.xcarchive/Products/Applications/YesNo.app/YesNo \
+            | grep -q "Every feature is unlocked"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: YesNo-Offline-ipa
+          path: build/*.ipa
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Attach to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/*.ipa

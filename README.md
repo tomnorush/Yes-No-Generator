@@ -54,10 +54,17 @@ YesNoUITests/             UI tests for the core promises
 YesNo.storekit            Local StoreKit config: test purchases in the Simulator without App Store Connect
 docs/                     GitHub Pages site: privacy policy, support page
 AppStore/                 Listing text (fastlane deliver layout) and submission notes
-scripts/                  Project generator, icon generator, metadata checker
+scripts/                  Project generator, Offline .ipa builder, icon generator, metadata checker
+INSTALL.md                Install the Offline build on your own iPhone and Apple Watch
 ```
 
 Targets: iOS 17+, watchOS 10+. Built and tested in CI with Xcode 26.
+
+## Try it on your iPhone
+
+**[INSTALL.md](INSTALL.md)** walks through installing the **Offline** build on your own iPhone and Apple Watch,
+with no App Store Connect account: from Xcode on a Mac, or by sideloading the `.ipa` that CI builds.
+In that build every feature is unlocked, purchases are off, and the app never goes online.
 
 ## Run it
 
@@ -65,6 +72,7 @@ Targets: iOS 17+, watchOS 10+. Built and tested in CI with Xcode 26.
 2. Pick the **YesNo** scheme and an iPhone simulator, then Run. Purchases in the Simulator use `YesNo.storekit`
    automatically; if Xcode shows no StoreKit configuration, select it under Product → Scheme → Edit Scheme → Run → Options.
 3. For the watch app, pick the **YesNoWatch** scheme and a watch simulator.
+4. To try every feature without purchases, use the **YesNo Offline** scheme (see [INSTALL.md](INSTALL.md)).
 
 Tests:
 

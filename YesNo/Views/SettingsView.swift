@@ -45,11 +45,14 @@ struct SettingsView: View {
                          : "History stays on this device and is never uploaded. Your last \(History.freeLimit) answers are kept.")
                 }
 
-                if model.isPro || model.mayMentionPro {
-                    ProSection()
+                if ProStore.isOfflineBuild {
+                    OfflineBuildSection()
+                } else {
+                    if model.isPro || model.mayMentionPro {
+                        ProSection()
+                    }
+                    PurchasesSection()
                 }
-
-                PurchasesSection()
 
                 AboutSection()
             }
@@ -285,6 +288,23 @@ private struct PurchasesSection: View {
         } header: {
             Text("Purchases")
         }
+    }
+}
+
+/// Shown instead of Pro and Purchases in the Offline build, so it's obvious which build is installed.
+/// Compiled only into that build (CI checks the text is in the Offline binary).
+private struct OfflineBuildSection: View {
+    var body: some View {
+        #if OFFLINE
+        Section {
+            Label("Every feature is unlocked", systemImage: "checkmark.seal.fill")
+                .foregroundStyle(.green)
+        } header: {
+            Text("Offline Build")
+        } footer: {
+            Text("This is a personal test build. Purchases are turned off and the app never goes online.")
+        }
+        #endif
     }
 }
 

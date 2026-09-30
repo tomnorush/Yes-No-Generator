@@ -21,6 +21,17 @@ final class ProStore {
 
     static let fallbackProductID = "com.tomnorush.yesno.pro"
 
+    /// True in the "Offline" build configuration (the `OFFLINE` compilation flag): a personal build
+    /// for testing on your own device. Every Pro feature is unlocked and StoreKit is never used,
+    /// so it needs no App Store Connect setup and makes no network requests at all.
+    static let isOfflineBuild: Bool = {
+        #if OFFLINE
+        return true
+        #else
+        return false
+        #endif
+    }()
+
     /// Read from Info.plist (`YesNoProProductID`, derived from the bundle ID in Config/Shared.xcconfig).
     static var productID: String {
         (Bundle.main.object(forInfoDictionaryKey: "YesNoProProductID") as? String)
@@ -43,6 +54,10 @@ final class ProStore {
 
     init(defaults: UserDefaults) {
         self.defaults = defaults
+        if Self.isOfflineBuild {
+            isPro = true
+            return
+        }
         // Cached so Pro themes and odds are right on the first frame; StoreKit confirms right after.
         isPro = defaults.bool(forKey: Self.cacheKey)
         updatesTask = Task { [weak self] in
@@ -57,7 +72,7 @@ final class ProStore {
     // MARK: - Product
 
     func loadProductIfNeeded() async {
-        guard product == nil, productState != .loading else { return }
+        guard !Self.isOfflineBuild, product == nil, productState != .loading else { return }
         productState = .loading
         do {
             let products = try await Product.products(for: [Self.productID])
@@ -71,7 +86,7 @@ final class ProStore {
     // MARK: - Purchase
 
     func purchase() async {
-        guard let product, !isPurchasing else { return }
+        guard !Self.isOfflineBuild, let product, !isPurchasing else { return }
         isPurchasing = true
         statusMessage = nil
         defer { isPurchasing = false }
@@ -98,7 +113,7 @@ final class ProStore {
 
     /// Asks the App Store to sync, then re-reads what this Apple Account owns.
     func restore() async {
-        guard !isRestoring else { return }
+        guard !Self.isOfflineBuild, !isRestoring else { return }
         isRestoring = true
         statusMessage = nil
         defer { isRestoring = false }
@@ -118,6 +133,7 @@ final class ProStore {
     // MARK: - Entitlements
 
     func refreshEntitlements() async {
+        guard !Self.isOfflineBuild else { return }
         var owned = false
         for await result in Transaction.currentEntitlements {
             if case .verified(let transaction) = result,

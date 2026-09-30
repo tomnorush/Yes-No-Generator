@@ -205,6 +205,25 @@ set_settings(ui_tests, {
   'LD_RUNPATH_SEARCH_PATHS' => '$(inherited) @executable_path/Frameworks @loader_path/Frameworks',
 })
 
+# --- "Offline" configuration: a personal build for your own device -------------
+# Release settings plus the OFFLINE Swift flag: every Pro feature unlocked, StoreKit never used,
+# no App Store Connect needed. Built by the "YesNo Offline" scheme and scripts/build_offline_ipa.sh.
+
+def add_offline_configuration(project, list, extra = {})
+  release = list.build_configurations.find { |c| c.name == 'Release' }
+  offline = project.new(Xcodeproj::Project::Object::XCBuildConfiguration)
+  offline.name = 'Offline'
+  offline.base_configuration_reference = release.base_configuration_reference
+  offline.build_settings = release.build_settings.dup.merge(extra)
+  list.build_configurations << offline
+end
+
+add_offline_configuration(project, project.build_configuration_list,
+                          'SWIFT_ACTIVE_COMPILATION_CONDITIONS' => 'OFFLINE $(inherited)')
+[ios, watch, widget, ui_tests].each do |target|
+  add_offline_configuration(project, target.build_configuration_list)
+end
+
 # --- Wiring: complication inside watch app inside phone app -------------------
 
 embed(watch, widget, 'Embed Foundation Extensions', :plug_ins)
@@ -249,6 +268,14 @@ ios_scheme.launch_action.xml_element.add_element(
   'StoreKitConfigurationFileReference', 'identifier' => '../../YesNo.storekit'
 )
 ios_scheme.save_as(PROJECT_PATH, 'YesNo', true)
+
+# Run and Archive the Offline configuration: what you install on your own iPhone for testing.
+offline_scheme = Xcodeproj::XCScheme.new
+offline_scheme.configure_with_targets(ios, nil, launch_target: true)
+offline_scheme.launch_action.build_configuration = 'Offline'
+offline_scheme.profile_action.build_configuration = 'Offline'
+offline_scheme.archive_action.build_configuration = 'Offline'
+offline_scheme.save_as(PROJECT_PATH, 'YesNo Offline', true)
 
 watch_scheme = Xcodeproj::XCScheme.new
 watch_scheme.configure_with_targets(watch, nil, launch_target: true)
