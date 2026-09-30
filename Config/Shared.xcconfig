@@ -1,0 +1,15 @@
+// Settings shared by every target. Edit these before building for a device or the App Store.
+
+// Your reverse-DNS app identifier. The watch app, complication and the Pro product ID
+// are derived from it, so this is the only place it needs to change.
+BUNDLE_ID_BASE = com.tomnorush.yesno
+
+// The one-time "Pro" in-app purchase. Create a Non-Consumable with exactly this
+// Product ID in App Store Connect (and keep YesNo.storekit in sync for local testing).
+PRO_PRODUCT_ID = $(BUNDLE_ID_BASE).pro
+
+// Your Apple Developer Team ID (Xcode > Settings > Accounts), or pick it in Signing & Capabilities.
+DEVELOPMENT_TEAM =
+
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1

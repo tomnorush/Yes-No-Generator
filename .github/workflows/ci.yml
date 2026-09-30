@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core:
+    name: Core logic tests (YesNoKit)
+    runs-on: macos-26
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain
+        run: swift --version
+      - name: Unit tests
+        run: swift test --package-path YesNoKit
+
+  metadata:
+    name: App Store metadata and manifests
+    runs-on: macos-26
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Metadata length limits
+        run: python3 scripts/check_metadata.py
+      - name: Property lists and privacy manifests are valid
+        run: |
+          plutil -lint YesNo/Info.plist YesNo/PrivacyInfo.xcprivacy \
+            YesNoWatch/Info.plist YesNoWatch/PrivacyInfo.xcprivacy \
+            YesNoWatchWidget/Info.plist
+          python3 -m json.tool YesNo.storekit > /dev/null
+      - name: App requests no permissions
+        run: |
+          if grep -rn "UsageDescription" YesNo YesNoWatch YesNoWatchWidget YesNo.xcodeproj; then
+            echo "::error::A permission usage string was added. The app is meant to need no permissions."
+            exit 1
+          fi
+
+  apps:
+    name: Build iPhone + Apple Watch apps, run UI tests
+    runs-on: macos-26
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Xcode
+        run: xcodebuild -version
+
+      - name: Build Apple Watch app
+        run: |
+          xcodebuild build -quiet \
+            -project YesNo.xcodeproj -scheme YesNoWatch \
+            -destination 'generic/platform=watchOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Build iPhone app (embeds the watch app)
+        run: |
+          xcodebuild build -quiet \
+            -project YesNo.xcodeproj -scheme YesNo \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Pick an iPhone simulator
+        id: sim
+        run: |
+          udid=$(xcrun simctl list devices available --json | jq -r '
+            .devices | to_entries
+            | map(select(.key | test("SimRuntime\\.iOS-")))
+            | sort_by(.key | capture("iOS-(?<v>[0-9-]+)").v | split("-") | map(tonumber))
+            | last | .value | map(select(.name | startswith("iPhone"))) | first | .udid')
+          echo "Using simulator $udid"
+          echo "udid=$udid" >> "$GITHUB_OUTPUT"
+
+      - name: UI tests
+        run: |
+          xcodebuild test -quiet \
+            -project YesNo.xcodeproj -scheme YesNo \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -resultBundlePath UITests.xcresult \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Explain test failures
+        if: failure()
+        run: |
+          [ -d UITests.xcresult ] || exit 0
+          xcrun xcresulttool get test-results summary --path UITests.xcresult \
+            | jq -r '.testFailures[]? | "::error title=\(.testName)::\(.failureText)"'
+
+      - name: Keep test results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: UITests.xcresult
+          path: UITests.xcresult
+          if-no-files-found: ignore

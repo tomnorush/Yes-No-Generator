@@ -1,0 +1,1 @@
+coin,flip,toss,random,generator,decide,choice,chooser,picker,maybe,question,undecided,oracle,watch
