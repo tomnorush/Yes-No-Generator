@@ -1,0 +1,14 @@
+{
+  // Type-checks the scripts against Scriptable's API definitions, so a misspelled or
+  // non-existent Scriptable method fails CI instead of failing on the phone.
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "types": ["scriptable-ios"],
+    "strict": false
+  },
+  "files": ["Yes or No.js", "Install Yes or No.js"]
+}

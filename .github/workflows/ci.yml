@@ -22,6 +22,26 @@ jobs:
       - name: Unit tests
         run: swift test --package-path YesNoKit
 
+  scriptable:
+    name: Scriptable script (type check + tests)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: scriptable
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: scriptable/package-lock.json
+      - run: npm ci
+      - name: Every Scriptable call exists with the right types
+        run: npm run typecheck
+      - name: Logic, app screens, widgets, Siri, Shortcuts, share sheet and installer
+        run: npm test
+
   metadata:
     name: App Store metadata and manifests
     runs-on: macos-26
