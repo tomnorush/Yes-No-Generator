@@ -1,13 +1,13 @@
 # Yes or No for Scriptable
 
 The Yes or No app as a single [Scriptable](https://apps.apple.com/app/scriptable/id1405459188) script.
-Run it, and the answer is already on screen. Tap the answer for another.
+Run it and you get a clean, blank screen. Tap anywhere for an answer, and tap again for another.
 Nothing to build, no Xcode, no App Store account: install Scriptable (free) and add one script.
 
 - **Instant**: the answer is picked before the screen appears. Tap anywhere on it for a new one.
-- **Yes / No / Maybe** switch at the top.
-- **Optional question**, kept with the answer. **Copy** and **Share** in one tap.
-- **History** of your last 200 answers, kept only on this iPhone. Delete one, or clear them all.
+- **Yes / No** by default. Switch to **Yes / No / Maybe** in **Settings**.
+- **History** of your last 200 answers, kept only on this iPhone, opened from **Settings**. Delete one, copy or share it, or clear them all.
+- The only button on the main screen is **Settings**. A small number (#1, #2, ...) under the answer tells repeated answers apart.
 - **Settings**: 7 color themes (Classic follows light/dark mode), odds from 10/90 to 90/10, history on/off.
   When the odds aren't 50/50, the screen and anything you share say so.
 - **Widgets** for the Home Screen and Lock Screen. Tap one for a fresh answer.
@@ -51,7 +51,7 @@ in Safari, then Share → **Save to Files** → iCloud Drive → **Scriptable**.
 
 ### 1. In Scriptable
 
-Tap **Yes or No** in your scripts. The answer is already there; tap it for another.
+Tap **Yes or No** in your scripts. The screen starts blank; tap anywhere for an answer, and again for another.
 
 ### 2. Siri, the Action button and a Home Screen icon
 
@@ -107,7 +107,7 @@ question. If the script isn't listed, open it in Scriptable, tap the settings bu
 | | Scriptable script | iPhone app |
 |---|---|---|
 | Install | Scriptable + one script | Xcode, sideloading or the App Store |
-| Answer at launch, tap for another, Yes/No/Maybe, question, Copy/Share | ✓ | ✓ |
+| Tap for an answer, Yes/No/Maybe | ✓ (blank screen at start) | ✓ (answer at launch) |
 | History | Last 200 | Last 50, or unlimited with Pro |
 | Themes and custom odds | ✓ free | With Pro |
 | Widgets | Home and Lock Screen | Apple Watch complication |
@@ -116,6 +116,7 @@ question. If the script isn't listed, open it in Scriptable, tap the settings bu
 
 ## Troubleshooting
 
+- **No vibration on a new answer**: Scriptable has no haptic feedback feature, so a script can't vibrate the phone. The running number under the answer (#1, #2, ...) shows when a new one arrives. The App Store app has haptics.
 - **"Couldn't download Yes or No"**: check your internet connection and run the installer again.
 - **Tapping the widget opens the editor instead of answering**: edit the widget and set When Interacting to **Run Script**.
 - **Siri, the shortcut or the installer's Open button can't find the script**: the script must be named exactly `Yes or No`.
