@@ -8,6 +8,10 @@ incumbents are 135–145 MB Unity apps with ads that don't go away after you pay
 review pop-ups after every use. This app is the opposite: native SwiftUI, a few megabytes, and nothing
 between you and the answer.
 
+**No Xcode? Try the [Scriptable version](scriptable/README.md).** It's the same app as one script for the free
+[Scriptable](https://apps.apple.com/app/scriptable/id1405459188) app, with Home Screen and Lock Screen widgets
+and Siri support. It installs in a minute, straight on your iPhone.
+
 ## How it meets the requirements
 
 | Requirement | How |
@@ -56,6 +60,7 @@ docs/                     GitHub Pages site: privacy policy, support page
 AppStore/                 Listing text (fastlane deliver layout) and submission notes
 scripts/                  Project generator, Offline .ipa builder, icon generator, metadata checker
 INSTALL.md                Install the Offline build on your own iPhone and Apple Watch
+scriptable/               The same app as a Scriptable script, with its installer, docs and tests
 ```
 
 Targets: iOS 17+, watchOS 10+. Built and tested in CI with Xcode 26.
