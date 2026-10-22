@@ -219,7 +219,7 @@ function createSession(state, store, random = Math.random) {
   const session = {
     state,
     store,
-    answer: "yes",
+    answer: null,
     question: null,
     count: 0,
     note: null,
@@ -240,7 +240,7 @@ function createSession(state, store, random = Math.random) {
       return session.answer
     },
     shareText() {
-      return shareText(session.answer, session.question, state.mode, state.yesShare)
+      return shareText(session.answer || "yes", session.question, state.mode, state.yesShare)
     },
   }
   return session
@@ -276,8 +276,9 @@ function palette(themeID, answer) {
   }
 }
 
+/** Big enough to read, small enough that the widest word (MAYBE) stays on one line. */
 function answerFontSize(word, screenWidth) {
-  return Math.max(48, Math.min(150, Math.floor(screenWidth / (word.length * 0.75))))
+  return Math.max(48, Math.min(150, Math.floor((screenWidth - 80) / (word.length * 0.78))))
 }
 
 function timeLabel(dateString) {
@@ -309,134 +310,64 @@ async function presentMain(session) {
 
 function buildMainRows(table, session, render) {
   const state = session.state
-  const colors = palette(state.themeID, session.answer)
   const screen = Device.screenSize()
-  const word = ANSWERS[session.answer].word
+  const hasAnswer = session.answer !== null
+  // Blank until the first tap: nothing is shown, saved or counted before you ask.
+  const colors = hasAnswer
+    ? palette(state.themeID, session.answer)
+    : {
+        background: Color.dynamic(new Color("#FFFFFF"), new Color("#000000")),
+        text: Color.dynamic(new Color("#000000"), new Color("#FFFFFF")),
+      }
 
-  const styleRow = (row, height) => {
+  const ask = () => {
+    session.ask()
+    render()
+  }
+  // Every row except the Settings button asks for a new answer, so a tap anywhere works.
+  const styleRow = (row, height, tappable = true) => {
     row.height = height
     row.backgroundColor = colors.background
     row.dismissOnSelect = false
+    if (tappable) row.onSelect = ask
     return row
   }
 
-  // Two-way or three-way, right on the main screen.
-  const modeRow = styleRow(new UITableRow(), 60)
-  modeRow.cellSpacing = 8
-  for (const id of Object.keys(MODES)) {
-    const selected = state.mode === id
-    const cell = UITableCell.button(`${selected ? "●" : "○"} ${MODES[id].title}`)
-    cell.titleColor = colors.text
-    cell.titleFont = selected ? Font.boldRoundedSystemFont(16) : Font.regularRoundedSystemFont(16)
-    cell.widthWeight = id === "yesNo" ? 42 : 58
-    cell.centerAligned()
-    cell.onTap = () => {
-      if (state.mode === id) return
-      state.mode = id
-      session.ask()
-      render()
-    }
-    modeRow.addCell(cell)
-  }
-  table.addRow(modeRow)
+  table.addRow(styleRow(new UITableRow(), 124))
 
-  // Optional question.
-  const questionRow = styleRow(new UITableRow(), 64)
-  const questionCell = questionRow.addText(
-    session.question ? `“${session.question}”` : "Ask a question (optional)",
-    session.question ? "Tap to change or clear it" : "Tap to type it"
-  )
-  questionCell.titleColor = colors.text
-  questionCell.subtitleColor = colors.text
-  questionCell.titleFont = Font.semiboldRoundedSystemFont(17)
-  questionCell.subtitleFont = Font.regularRoundedSystemFont(13)
-  questionCell.centerAligned()
-  questionRow.onSelect = async () => {
-    const question = await askForQuestion(session.question)
-    if (question === undefined) return // cancelled
-    session.question = question
-    session.ask()
-    render()
-  }
-  table.addRow(questionRow)
-
-  // The answer. Tap anywhere on it for another.
   const answerRow = styleRow(new UITableRow(), Math.max(280, screen.height - 340))
-  const hints = []
-  if (!isFair(state.yesShare)) hints.push(`Odds: ${oddsSummary(state.mode, state.yesShare)}`)
-  hints.push(session.note || "Tap for a new answer")
-  const answerCell = answerRow.addText(word, hints.join("  •  "))
-  answerCell.titleFont = Font.blackRoundedSystemFont(answerFontSize(word, screen.width))
-  answerCell.titleColor = colors.text
-  answerCell.subtitleFont = Font.semiboldRoundedSystemFont(16)
-  answerCell.subtitleColor = colors.text
-  answerCell.centerAligned()
-  answerRow.onSelect = () => {
-    session.ask()
-    render()
+  if (hasAnswer) {
+    const word = ANSWERS[session.answer].word
+    const hints = []
+    if (!isFair(state.yesShare)) hints.push(`Odds: ${oddsSummary(state.mode, state.yesShare)}`)
+    // The running number tells two identical answers in a row apart.
+    hints.push(`#${session.count}`)
+    const answerCell = answerRow.addText(word, hints.join("  \u2022  "))
+    answerCell.titleFont = Font.blackRoundedSystemFont(answerFontSize(word, screen.width))
+    answerCell.titleColor = colors.text
+    answerCell.subtitleFont = Font.semiboldRoundedSystemFont(16)
+    answerCell.subtitleColor = colors.text
+    answerCell.centerAligned()
   }
   table.addRow(answerRow)
 
-  // Copy, Share, History, Settings.
-  const actionRow = styleRow(new UITableRow(), 60)
-  actionRow.cellSpacing = 4
-  const actions = [
-    {
-      title: "Copy",
-      onTap: () => {
-        Pasteboard.copyString(session.shareText())
-        session.note = "Copied"
-        render()
-      },
-    },
-    {
-      title: "Share",
-      onTap: async () => {
-        await ShareSheet.present([session.shareText()])
-      },
-    },
-    {
-      title: "History",
-      onTap: async () => {
-        await presentHistory(session)
-        render()
-      },
-    },
-    {
-      title: "Settings",
-      onTap: async () => {
-        await presentSettings(session)
-        render()
-      },
-    },
-  ]
-  for (const action of actions) {
-    const cell = UITableCell.button(action.title)
-    cell.titleColor = colors.text
-    cell.titleFont = Font.semiboldRoundedSystemFont(16)
-    cell.centerAligned()
-    cell.onTap = action.onTap
-    actionRow.addCell(cell)
+  // Settings holds everything else: answer type, history, themes, odds.
+  const settingsRow = styleRow(new UITableRow(), 60, false)
+  settingsRow.addText(" ").widthWeight = 70
+  const settings = UITableCell.button("Settings")
+  settings.widthWeight = 30
+  settings.titleColor = colors.text
+  settings.titleFont = Font.semiboldRoundedSystemFont(16)
+  settings.centerAligned()
+  settings.onTap = async () => {
+    await presentSettings(session)
+    render()
   }
-  table.addRow(actionRow)
+  settingsRow.addCell(settings)
+  table.addRow(settingsRow)
 
-  // Fill the rest of the screen with the answer color.
+  // Fill the rest of the screen with the background color.
   table.addRow(styleRow(new UITableRow(), 240))
-}
-
-/** Returns the new question (null to clear), or undefined if cancelled. */
-async function askForQuestion(current) {
-  const alert = new Alert()
-  alert.title = "Your question"
-  alert.message = "Optional. It's kept with the answer in History and included when you share."
-  alert.addTextField("Should we get pizza?", current || "")
-  alert.addAction("Ask")
-  if (current) alert.addDestructiveAction("Clear question")
-  alert.addCancelAction("Cancel")
-  const choice = await alert.presentAlert()
-  if (choice === -1) return undefined
-  if (choice === 1) return null
-  return normalizeQuestion(alert.textFieldValue(0))
 }
 
 // MARK: - Scriptable: history
@@ -591,6 +522,18 @@ async function presentSettings(session) {
   function build() {
     addHeader("Settings")
 
+    addHeader("Answer type")
+    for (const [id, mode] of Object.entries(MODES)) {
+      addRow(`${state.mode === id ? "\u2713  " : ""}${mode.title}`, id === "yesNo" ? "Default" : null, () => {
+        if (state.mode !== id) {
+          state.mode = id
+          session.answer = null // the screen goes blank so an answer from the other type never lingers
+          save()
+        }
+        render()
+      })
+    }
+
     addHeader("Color theme")
     for (const [id, theme] of Object.entries(THEMES)) {
       const colors = palette(id, "yes")
@@ -623,6 +566,10 @@ async function presentSettings(session) {
     })
 
     addHeader("History")
+    addRow("View history", `${state.history.length} saved answer${state.history.length === 1 ? "" : "s"}`, async () => {
+      await presentHistory(session)
+      render()
+    })
     addRow(`Save history: ${state.historyEnabled ? "On" : "Off"}`, "Tap to turn it " + (state.historyEnabled ? "off." : "on."), () => {
       state.historyEnabled = !state.historyEnabled
       save()
@@ -788,7 +735,9 @@ async function main() {
 
   const session = createSession(state, store)
   session.question = normalizeQuestion(questionFromInput())
-  session.ask() // The answer is ready before anything is drawn.
+  // In the app the screen starts blank; Siri, Shortcuts and a shared question answer straight away.
+  const startsBlank = (config.runsInApp || config.runsInActionExtension) && !config.runsWithSiri && !session.question
+  if (!startsBlank) session.ask()
 
   if (config.runsWithSiri) {
     await presentForSiri(session)
@@ -797,7 +746,7 @@ async function main() {
   } else {
     await presentAlertLoop(session)
   }
-  Script.setShortcutOutput(ANSWERS[session.answer].word)
+  if (session.answer) Script.setShortcutOutput(ANSWERS[session.answer].word)
   Script.complete()
 }
 
@@ -806,7 +755,7 @@ async function main() {
 if (typeof Script === "undefined") {
   module.exports = {
     VERSION, HISTORY_LIMIT, QUESTION_MAX, ANSWERS, MODES, THEMES,
-    clampYesShare, isFair, validMode, probabilities, percentages, oddsSummary, decide,
+    answerFontSize, clampYesShare, isFair, validMode, probabilities, percentages, oddsSummary, decide,
     normalizeQuestion, shareText, makeEntry, recordEntry, isValidEntry, sanitizeState,
     parseState, dayKey, groupByDay, createSession, buildWidget, main,
   }
